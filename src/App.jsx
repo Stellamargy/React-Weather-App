@@ -1,6 +1,6 @@
 import React from 'react'
 import WeatherData from './WeatherData'
-
+import Footer from './Footer'
 
 
 
@@ -16,7 +16,7 @@ function App() {
         </form>
       </div>
       <WeatherData/>
-
+      <Footer/>
       </div>
         
   
