@@ -1,6 +1,8 @@
-import React from 'react'
-import WeatherData from './WeatherData'
-import Footer from './Footer'
+import React from 'react';
+import WeatherData from './WeatherData';
+import Footer from './Footer';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
 
 
 
