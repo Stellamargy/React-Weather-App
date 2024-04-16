@@ -90,13 +90,17 @@ footer p{
     display:flex;
   }
   body{
-    background-color: #F9F7FE;
+    
+    background-image:url(" https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .app-container{
     max-width: 800px;
     margin:50px auto;
     border-radius:5px;
-    background-color: white;;
+    background-color: white;
+    
   }
 }
 

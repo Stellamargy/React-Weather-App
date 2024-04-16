@@ -35,7 +35,7 @@ const WeatherData = () => {
             <div className="temperature-container">
               <span className="temp">23</span>
 
-              <span className="symbol">°C {"|"}</span>
+              <span className="symbol">°C </span><span className="symbol"> | </span>
               <span className="symbol">°F</span>
             </div>
           </div>
