@@ -1,28 +1,27 @@
-import React from 'react';
-import WeatherData from './WeatherData';
-import Footer from './Footer';
-import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
-
-
+import React from "react";
+import WeatherData from "./WeatherData";
+import Footer from "./Footer";
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 
 function App() {
-
   return (
-    
-      <div className='app-wrapper'>
-       <div className='search-form'>
-        <form >
-          <input type="search"  placeholder="Enter a City..."  required/>
-          <input type="submit" value="Search" />
+    <div className="app-container">
+      <div className="form-container">
+        <form>
+          <input
+            className="city-input"
+            type="search"
+            placeholder="Enter a city..."
+            required
+          />
+          <input className="search-btn" type="submit" value="Search" />
         </form>
       </div>
-      <WeatherData/>
+      <WeatherData />
       <Footer/>
-      </div>
-        
-  
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
