@@ -64,9 +64,15 @@ footer a{
   color:#8860F4;
   text-decoration: none;
   transition:all 200ms ease;
+  
 }
+
 footer a:hover{
   text-decoration: underline;
+}
+footer p{
+  text-align: center;
+  font-size: 13px;
 }
 @media screen and (min-width:450px){
   .temp{

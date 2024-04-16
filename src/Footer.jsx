@@ -4,7 +4,7 @@ import React from "react";
 const Footer=()=>{
     return(
         <footer>
-            <p>
+            <p >
                 Coded by 
                 <a href="" target="_blank" rel="noopener noreferrer"> Stella Margy </a>
                 and is open-sourced on
