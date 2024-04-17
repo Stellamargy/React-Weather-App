@@ -61,10 +61,7 @@ p,ul{
   top:-20px;
   font-size:12px;
 }
-.symbol:hover{
-  text-decoration: underline;
-  color:blue;
-}
+
 footer a{
   color:#8860F4;
   text-decoration: none;

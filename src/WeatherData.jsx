@@ -1,27 +1,11 @@
 import React, { useState } from "react";
 import FriendlyDateFormat from "./FriendlyDateFormat";
+import TemperatureConversion from "./TemperatureConversion";
 
 const WeatherData=({data})=>{
-  const[units,setUnits]=useState(data.temperature)
-  let clicked=true;
-  console.log(clicked);
-  const handleFarenheitUnits=()=>{
-    if(clicked){
-     // (0°C × 9/5) + 32 = 32°F
-     const fahrenheit=Math.round((units)*9/5+32);
-     setUnits(fahrenheit) // (0°C × 9/5) + 32 = 32°F
-    
-     console.log(clicked)
-    }
-    
-    clicked=false;
 
-  }
   
   
-  const handleCelciusUnit=()=>{
-    setUnits(Math.round(data.temperature))
-  }
  
 
   return(
@@ -54,15 +38,7 @@ const WeatherData=({data})=>{
               alt={data.description}
             />
           </div>
-          <div className="temperature-container">
-            <span className="temp">
-              {Math.round(units)}
-            </span>
-
-            <span className="symbol" onClick={handleCelciusUnit}>°C </span>
-            <span className="symbol"> | </span>
-            <span className="symbol" onClick={handleFarenheitUnits}>°F</span>
-          </div>
+          <TemperatureConversion temperature={data.temperature}/>
         </div>
       </div>
     </div>
