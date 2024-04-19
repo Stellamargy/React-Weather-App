@@ -88,17 +88,18 @@ footer p{
   
 
  }
- @media screen and (max-width:450px){
-  footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
+.border{
+  border:1px solid black;
+}
+ footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
- }
-@media screen and (min-width:450px){
+@media screen and (min-width:576px){
   .temp{
     font-size: 45px;
     font-weight: 700;
@@ -109,13 +110,17 @@ footer p{
     font-size:16px;
   }
   .app-container{
-    min-height: 100%;
+    border: 1px solid black;
+    margin:40px;
+    border-radius:5px;
   }
+ 
   
 }
+
 @media screen and (min-width:768px){
   .app-container{
-    border:1px solid black;
+   min-height:100%;
   }
   .temperature-wrapper{
     display:flex;
@@ -127,6 +132,9 @@ footer p{
     border-radius:5px;
     background-color: white;
     
+  }
+  footer{
+    position:relative;
   }
 }
 

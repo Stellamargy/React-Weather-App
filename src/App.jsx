@@ -6,6 +6,7 @@ import "./index.css";
 import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import axios from "axios";
+import WeatherForecast from "./WeatherForecast";
 
 function App() {
   // Default City
@@ -42,8 +43,8 @@ function App() {
       <header>
         <form onSubmit={handleSubmit}>
           <div className="container">
-            <div className="row">
-              <div className="col-9  p-0">
+            <div className="row p-0">
+              <div className="col-9  p-1">
                 <input
                 onChange={handleCityChange}
                   className="city-input"
@@ -52,7 +53,7 @@ function App() {
                   required
                 />
               </div>
-              <div className="col-3 " >
+              <div className="col-3 p-1" >
                 <input className="search-btn" type="submit" value="Search" />
               </div>
             </div>
@@ -61,6 +62,7 @@ function App() {
       </header>
       <main>
      <WeatherData data={weatherElements} city={city}/>
+     <WeatherForecast/>
       </main>
       <Footer />
     </div>

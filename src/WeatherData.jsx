@@ -13,7 +13,7 @@ const WeatherData=({data})=>{
     <div className="container p-0">
       <div className="row p-0">
         <div className="col-9">
-          <h1 className="m-0 te">{data.city}</h1>
+          <h1 className="m-0 ">{data.city}</h1>
           <FriendlyDateFormat data={data}/>
           <ul className="p-0">
             <li>
