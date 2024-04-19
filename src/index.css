@@ -103,6 +103,9 @@ footer p{
   }
 }
 @media screen and (min-width:768px){
+  .app-container{
+    border:1px solid black;
+  }
   .temperature-wrapper{
     display:flex;
   }
