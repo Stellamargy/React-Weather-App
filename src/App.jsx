@@ -78,7 +78,7 @@ function App() {
           aria-label="Loading Spinner"
           data-testid="loader"
         />
-        Loading Weather Elements
+        Loading Weather App
         </div>
       
       </div>

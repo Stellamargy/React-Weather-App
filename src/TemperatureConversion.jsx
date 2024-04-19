@@ -23,11 +23,13 @@ const convertToCelcius=(e)=>{
     );
   }else{
    
-    <div className="temperature-container">
+    return(
+      <div className="temperature-container">
         <span className="temp">{Math.round((temperature)*9/5+32)}</span>
         <span className="symbol"><a href="/" onClick={convertToCelcius}>°C </a>| °F</span>
         
       </div>
+    )
   }
 };
 export default TemperatureConversion;
