@@ -88,6 +88,16 @@ footer p{
   
 
  }
+ @media screen and (max-width:450px){
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+ }
 @media screen and (min-width:450px){
   .temp{
     font-size: 45px;
@@ -101,6 +111,7 @@ footer p{
   .app-container{
     min-height: 100%;
   }
+  
 }
 @media screen and (min-width:768px){
   .app-container{
