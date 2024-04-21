@@ -17,7 +17,7 @@ const convertToCelcius=(e)=>{
       <div className="temperature-container">
         <span className="temp">{Math.round(temperature)}</span>
 
-        <span className="symbol">°C | <a href="/" onClick={convertToFarenheit}>°F</a></span>
+        <span className="symbol">°C  <a href="/" onClick={convertToFarenheit}>|°F</a></span>
         
       </div>
     );

@@ -1,176 +1,142 @@
-/* CSS Reset */
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-} */
-body{
+body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
-.app-container{
-  /* border:2px solid #333; */
-  padding:30px 0px 0px 10px;
-  /* min-height: 100vh; */
-  
+.app-container {
+  padding: 30px 20px 0px 10px;
 }
-header{
- margin-bottom: 20px;
+header {
+  margin-bottom: 20px;
 }
-.city-input,.search-btn{
-  width:100%;
-  padding:10px 5px;
-  border-radius:5px;
-  border:none;
-
+.city-input,
+.search-btn {
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
 }
-.city-input{
-  background-color:  #f9f7fe;
+.city-input {
+  background-color: #f9f7fe;
 }
-.search-btn{
-  background-color: #8860F4;
-  color:white;
-  transition:all 200ms ease;
+.search-btn {
+  background-color: #8860f4;
+  color: white;
+  transition: all 200ms ease;
 }
-.search-btn:hover{
-  color:#8860F4;
+.search-btn:hover {
+  color: #8860f4;
   background-color: white;
   border: 1px solid black;
 }
-h1{
+h1 {
   text-transform: capitalize;
 }
-ul{
+ul {
   padding: 0;
   list-style-type: none;
 }
-p,ul{
-  opacity:0.8;
-  font-size: 0.8;
+p,
+ul {
+  opacity: 0.8;
 }
-.weather-element-unit{
-  color:rgb(235, 64, 158);
+.weather-element-unit {
+  color: rgb(235, 64, 158);
   font-weight: 900;
 }
-.temp{
+.temp {
   font-size: 30px;
   font-weight: 700;
 }
-.temperature-container .symbol{
-  position:relative;
-  top:-20px;
-  font-size:12px;
+.temperature-container .symbol {
+  position: relative;
+  top: -20px;
+  font-size: 12px;
 }
 
-footer a{
-  color:#8860F4;
+footer a {
+  color: #8860f4;
   text-decoration: none;
-  transition:all 200ms ease;
-  
+  transition: all 200ms ease;
 }
 
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
 }
-footer p{
+footer p {
   text-align: center;
   font-size: 13px;
+  padding-top: 20px;
 }
-.loading-spinner{
-
-  margin-top:43px;
-  height:200px;
-  width:200px;
-  display:flex;
+.loading-spinner {
+  margin-top: 43px;
+  height: 200px;
+  width: 200px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-inline:auto
-  
-
- }
-.border{
-  border:1px solid black;
+  margin-inline: auto;
 }
- /* footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-} */
+.border {
+  border: 1px solid black;
+}
 
-.weather-forecast-container h2{
+.weather-forecast-container h2 {
   font-size: 1.2rem;
-  color:rgba(12, 7, 7,0.6);
+  color: rgba(12, 7, 7, 0.6);
 }
 
-.weather-forecast-day h3{
-  margin:0;
+.weather-forecast-day h3 {
+  margin: 0;
   font-size: 1.1rem;
 }
 
-.weather-forecast-temperatures span{
+.weather-forecast-temperatures span {
   font-size: 1rem;
 }
 
 /* for mobile devices. */
-@media screen and (max-width:576px){
-  .weather-forecast-container{
-    padding-top:20px;
-    background-color: #8860F4;
+@media screen and (max-width: 576px) {
+  .weather-forecast-container {
+    padding-top: 20px;
+    background-color: #8860f4;
   }
-  .weather-forecast-container h2{
+  .weather-forecast-container h2 {
     font-size: 1.2rem;
-    color:white;
-    
+    color: white;
   }
-  .weather-forecast-day-container{
+  .weather-forecast-day-container {
     background-color: white;
-    width:90%;
-    border-radius:10px;
-    margin:10px auto;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
   }
 }
-@media screen and (min-width:576px){
-  .temp{
+@media screen and (min-width: 576px) {
+  .temp {
     font-size: 45px;
     font-weight: 700;
   }
-  .temperature-container .symbol{
-    position:relative;
-    top:-20px;
-    font-size:16px;
+  .temperature-container .symbol {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
   }
-  .app-container{
+  .app-container {
     border: 1px solid black;
-    margin:40px;
-    border-radius:5px;
+    margin: 40px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .temperature-wrapper {
+    display: flex;
   }
  
-  
-}
-
-@media screen and (min-width:768px){
-  /* .app-container{
-   min-height:100%;
-  } */
-  .temperature-wrapper{
-    display:flex;
-  }
-
-  .app-container{
+  .app-container {
     max-width: 800px;
-    margin:50px auto;
-    border-radius:5px;
+    margin: 50px auto;
+    border-radius: 5px;
     background-color: white;
-    
-  }
-  footer{
-    position:relative;
   }
 }
-
-
-
-
-

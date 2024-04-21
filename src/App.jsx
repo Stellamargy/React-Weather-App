@@ -21,7 +21,8 @@ function App() {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      time:new Date(response.data.dt*1000)
+      time:new Date(response.data.dt*1000),
+      icon:`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
   }; 
  
@@ -30,7 +31,7 @@ function App() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
-// Fetch weather data when component mounts 
+
 
 
   const handleSubmit=(event)=>{
