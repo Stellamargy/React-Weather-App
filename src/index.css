@@ -99,6 +99,38 @@ footer p{
   text-align: center;
 }
 
+.weather-forecast-container h2{
+  font-size: 1.2rem;
+  color:rgba(12, 7, 7,0.6);
+}
+
+.weather-forecast-day h3{
+  margin:0;
+  font-size: 1.1rem;
+}
+
+.weather-forecast-temperatures span{
+  font-size: 1rem;
+}
+
+/* for mobile devices. */
+@media screen and (max-width:576px){
+  .weather-forecast-container{
+    padding-top:20px;
+    background-color: #8860F4;
+  }
+  .weather-forecast-container h2{
+    font-size: 1.2rem;
+    color:white;
+    
+  }
+  .weather-forecast-day-container{
+    background-color: white;
+   
+    border-radius:10px;
+    margin-top:10px;
+  }
+}
 @media screen and (min-width:576px){
   .temp{
     font-size: 45px;

@@ -13,6 +13,7 @@ function App() {
   const[city,setCity]=useState("Nairobi") 
   const [weatherElements, setWeatherElements] = useState({ loaded: false });
   const handleResponse = (response) => {
+    console.log(response);
     setWeatherElements({
       loaded: true,
       city:response.data.name,
@@ -29,6 +30,9 @@ function App() {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
+// Fetch weather data when component mounts 
+
+
   const handleSubmit=(event)=>{
     event.preventDefault();
     fetchWeatherElements();
@@ -62,7 +66,7 @@ function App() {
       </header>
       <main>
      <WeatherData data={weatherElements} city={city}/>
-     <WeatherForecast/>
+     <WeatherForecast city={city} />
       </main>
       <Footer />
     </div>
@@ -70,6 +74,7 @@ function App() {
     );
   }else{
     fetchWeatherElements();
+  
     return (
       <div >
         <div className="loading-spinner">
