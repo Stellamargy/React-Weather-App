@@ -6,9 +6,9 @@ const Footer=()=>{
         <footer>
             <p >
                 Coded by 
-                <a href="" target="_blank" rel="noopener noreferrer"> Stella Margy </a>
+                <a href="https://github.com/Stellamargy" target="_blank" rel="noopener noreferrer"> Stella Margy </a>
                 and is open-sourced on
-                <a href=""  target="_blank" rel="noopener noreferrer"> Github</a>
+                <a href="https://github.com/Stellamargy/react-weather-app"  target="_blank" rel="noopener noreferrer"> Github</a>
             </p>
         </footer>
     )
