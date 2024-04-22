@@ -1,19 +1,20 @@
 import React from "react";
  
 const WeatherForecastDay=({forecastData})=>{
+   
     const maxTemp=()=>{
-        const maxTemperature=forecastData.main.temp_max;
+        const maxTemperature=forecastData.temperature.maximum;
         return Math.round(maxTemperature)
 
     }
     const minTemp=()=>{
-        const mixTemperature=forecastData.main.temp_min;
+        const mixTemperature=forecastData.temperature.minimum;
         return Math.round(mixTemperature)
 
     }
     const day=()=>{
        const days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-       const date=new Date(forecastData.dt*1000);
+       const date=new Date(forecastData.time*1000);
        const day=days[date.getDay()]
        return day;
     }
@@ -25,8 +26,8 @@ const WeatherForecastDay=({forecastData})=>{
             </div>
             <div className="weather-forecast-icon">
               <img
-                src={`https://openweathermap.org/img/wn/${forecastData.weather[0].icon}@2x.png`}
-                alt="cloudly"
+                src={forecastData.condition.icon_url}
+                alt={forecastData.condition.icon}
               />
             </div>
 
